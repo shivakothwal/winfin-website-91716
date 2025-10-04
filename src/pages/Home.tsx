@@ -46,7 +46,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 sm:mb-10">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4 leading-tight">
-                About Us
+                Our Story
               </h2>
             </div>
             <div className="prose prose-lg max-w-none text-center">
