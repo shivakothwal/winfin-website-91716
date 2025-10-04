@@ -17,7 +17,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-elegant border-b border-border/50 sticky top-0 z-50 transition-all duration-300 overflow-x-hidden">
+    <nav className="bg-white shadow-elegant border-b border-border/50 sticky top-0 z-[100] transition-all duration-300 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20 relative">
           <div className="flex-shrink-0 min-w-0 mr-4">
