@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import VinFinLogo from "./VinFinLogo";
+import VinFinLogo from "@/components/ui/VinFinLogo";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
