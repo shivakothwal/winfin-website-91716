@@ -26,6 +26,64 @@ const About = () => {
         </section>
       </ScrollAnimatedElement>
 
+      {/* Team Section - Meet Our Founder */}
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
+              Meet Our Founder
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+              Led by an experienced professional dedicated to providing you with the best financial guidance and support.
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <ScrollAnimatedElement animation="scale-in">
+              <Card className="shadow-card hover:shadow-elegant transition-shadow duration-300">
+                <CardContent className="p-6 sm:p-8">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                    <img
+                      src={founderImage}
+                      alt="Founder & CEO"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2 text-center">Mr. Ramesh Damera</h3>
+                  <p className="text-accent font-semibold mb-6 text-center">Founder & CEO</p>
+                  <Collapsible open={isFounderBioOpen} onOpenChange={setIsFounderBioOpen}>
+                    <CollapsibleContent className="space-y-4">
+                      <p className="text-muted-foreground text-left leading-relaxed">
+                        Mr. Ramesh Damera, the Founder & CEO of VinFin Consultancy Services, established the company in 2025 with a clear purpose—to make quality education financially accessible for every aspiring student. With a strong belief that financial challenges should never stand in the way of education, he envisioned VinFin as a platform that simplifies complex financial processes and creates opportunities for students to pursue their dreams both in India and abroad.
+                      </p>
+                      <p className="text-muted-foreground text-left leading-relaxed">
+                        Driven by integrity, dedication, and a student-first approach, Mr. Damera has been committed to building reliable partnerships with consultancies and financial institutions to ensure a seamless journey for students. His mission is not only to provide financial solutions but also to serve as a guiding hand for students and families, helping them take confident steps toward a brighter future.
+                      </p>
+                    </CollapsibleContent>
+                    {!isFounderBioOpen && (
+                      <p className="text-muted-foreground text-left leading-relaxed mb-3">
+                        Mr. Ramesh Damera, the Founder & CEO of VinFin Consultancy Services, established the company in 2025 with a clear purpose—to make quality education financially accessible for every aspiring student...
+                      </p>
+                    )}
+                    <CollapsibleTrigger className="flex items-center gap-2 text-primary hover:underline mt-3 text-sm font-medium">
+                      {isFounderBioOpen ? (
+                        <>
+                          Read Less <ChevronUp className="h-4 w-4" />
+                        </>
+                      ) : (
+                        <>
+                          Read More <ChevronDown className="h-4 w-4" />
+                        </>
+                      )}
+                    </CollapsibleTrigger>
+                  </Collapsible>
+                </CardContent>
+              </Card>
+            </ScrollAnimatedElement>
+          </div>
+        </div>
+      </section>
+
       {/* Main About Content */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -240,62 +298,6 @@ const About = () => {
                 <Shield className="h-12 w-12 text-primary mb-4" />
                 <h3 className="text-xl font-semibold text-primary mb-3">Financial Planning</h3>
                 <p className="text-muted-foreground">Comprehensive financial planning services to manage education expenses and future investments.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Meet Our Founder
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Led by an experienced professional dedicated to providing you with the best financial guidance and support.
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <Card className="shadow-card hover:shadow-elegant transition-shadow duration-300">
-              <CardContent className="p-8">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
-                  <img
-                    src={founderImage}
-                    alt="Founder & CEO"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-2xl font-bold text-primary mb-2 text-center">Mr. Ramesh Damera</h3>
-                <p className="text-accent font-semibold mb-6 text-center">Founder & CEO</p>
-                <Collapsible open={isFounderBioOpen} onOpenChange={setIsFounderBioOpen}>
-                  <CollapsibleContent className="space-y-4">
-                    <p className="text-muted-foreground text-left leading-relaxed">
-                      Mr. Ramesh Damera, the Founder & CEO of VinFin Consultancy Services, established the company in 2025 with a clear purpose—to make quality education financially accessible for every aspiring student. With a strong belief that financial challenges should never stand in the way of education, he envisioned VinFin as a platform that simplifies complex financial processes and creates opportunities for students to pursue their dreams both in India and abroad.
-                    </p>
-                    <p className="text-muted-foreground text-left leading-relaxed">
-                      Driven by integrity, dedication, and a student-first approach, Mr. Damera has been committed to building reliable partnerships with consultancies and financial institutions to ensure a seamless journey for students. His mission is not only to provide financial solutions but also to serve as a guiding hand for students and families, helping them take confident steps toward a brighter future.
-                    </p>
-                  </CollapsibleContent>
-                  {!isFounderBioOpen && (
-                    <p className="text-muted-foreground text-left leading-relaxed mb-3">
-                      Mr. Ramesh Damera, the Founder & CEO of VinFin Consultancy Services, established the company in 2025 with a clear purpose—to make quality education financially accessible for every aspiring student...
-                    </p>
-                  )}
-                  <CollapsibleTrigger className="flex items-center gap-2 text-primary hover:underline mt-3 text-sm font-medium">
-                    {isFounderBioOpen ? (
-                      <>
-                        Read Less <ChevronUp className="h-4 w-4" />
-                      </>
-                    ) : (
-                      <>
-                        Read More <ChevronDown className="h-4 w-4" />
-                      </>
-                    )}
-                  </CollapsibleTrigger>
-                </Collapsible>
               </CardContent>
             </Card>
           </div>
