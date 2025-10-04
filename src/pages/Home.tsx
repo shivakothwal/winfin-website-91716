@@ -40,6 +40,27 @@ const Home = () => {
         </section>
       </ScrollAnimatedElement>
 
+      {/* About Us Section */}
+      <ScrollAnimatedElement animation="fade-in-up">
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-background">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8 sm:mb-10">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4 leading-tight">
+                About Us
+              </h2>
+            </div>
+            <div className="prose prose-lg max-w-none text-center">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
+                Founded in 2025, <VinFinText className="text-base sm:text-lg text-primary" showConsultancy consultancyText="Consultancy Services" consultancyClassName="text-primary" /> has been successfully delivering financial solutions and student support services to both students and consultancies. In a short span of time, we have built a reputation for being a trusted partner in enabling financial success and simplifying the journey of higher education—both abroad and in India.
+              </p>
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                We specialize in providing education loans, foreign exchange, accommodation assistance, and consultancy services, ensuring a smooth and transparent process for every student. With a strong network of financial institutions and collaborations with reputed consultancies, VinFin has become a reliable name that bridges aspirations with opportunities.
+              </p>
+            </div>
+          </div>
+        </section>
+      </ScrollAnimatedElement>
+
       {/* Features Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
