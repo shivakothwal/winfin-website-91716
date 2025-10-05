@@ -27,7 +27,9 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex items-center justify-center whitespace-nowrap rounded-lg px-6 py-3 text-base font-bold ring-offset-background transition-all duration-300 hover:bg-primary/10 hover:scale-105 hover:shadow-md cursor-pointer data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-secondary data-[state=active]:text-primary-foreground data-[state=active]:shadow-xl data-[state=active]:scale-105 data-[state=inactive]:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "inline-flex items-center justify-center whitespace-nowrap rounded-lg px-6 py-3 text-base font-bold ring-offset-background transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "data-[state=inactive]:bg-white data-[state=inactive]:text-foreground data-[state=inactive]:shadow-md data-[state=inactive]:hover:shadow-lg data-[state=inactive]:hover:scale-105 data-[state=inactive]:border data-[state=inactive]:border-primary/30",
+      "data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-secondary data-[state=active]:text-primary-foreground data-[state=active]:shadow-xl data-[state=active]:scale-105 data-[state=active]:border-2 data-[state=active]:border-primary",
       className,
     )}
     {...props}
