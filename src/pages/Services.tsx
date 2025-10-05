@@ -90,21 +90,24 @@ const Services = () => {
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <ScrollAnimatedElement animation="fade-in-up">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
                 Our Core Services
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
                 Specialized financial solutions tailored to your needs
+              </p>
+              <p className="text-base text-primary font-semibold">
+                Click on the tabs below to explore each service 👇
               </p>
             </div>
           </ScrollAnimatedElement>
 
           <Tabs defaultValue="loans" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="loans" className="text-sm sm:text-base">Loans</TabsTrigger>
-              <TabsTrigger value="forex" className="text-sm sm:text-base">Forex</TabsTrigger>
-              <TabsTrigger value="accommodation" className="text-sm sm:text-base">Accommodation</TabsTrigger>
+            <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-3 mb-8">
+              <TabsTrigger value="loans" className="text-base sm:text-lg">💰 Loans</TabsTrigger>
+              <TabsTrigger value="forex" className="text-base sm:text-lg">💱 Forex</TabsTrigger>
+              <TabsTrigger value="accommodation" className="text-base sm:text-lg">🏠 Accommodation</TabsTrigger>
             </TabsList>
 
             {/* Loans Tab */}

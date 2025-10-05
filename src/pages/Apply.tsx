@@ -97,16 +97,21 @@ const Apply = () => {
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <ScrollAnimatedElement animation="scale-in">
+            <div className="text-center mb-6">
+              <p className="text-lg text-muted-foreground font-medium">
+                Choose your enquiry type below 👇
+              </p>
+            </div>
             <Tabs defaultValue="consultancy" className="w-full">
               <div className="flex justify-center mb-8 sm:mb-12 px-2">
-                <TabsList className="grid w-full max-w-md grid-cols-2 h-auto sm:h-12 p-1">
-                  <TabsTrigger value="consultancy" className="text-sm sm:text-base font-medium flex items-center gap-1 sm:gap-2 transition-all duration-300 hover:scale-105 py-2 sm:py-0">
-                    <Users className="h-4 w-4 flex-shrink-0" />
-                    <span className="truncate">Business Enquiry</span>
+                <TabsList className="grid w-full max-w-2xl grid-cols-2 h-auto p-2">
+                  <TabsTrigger value="consultancy" className="flex items-center gap-2 py-3">
+                    <Users className="h-5 w-5 flex-shrink-0" />
+                    <span>Business Enquiry</span>
                   </TabsTrigger>
-                  <TabsTrigger value="student" className="text-sm sm:text-base font-medium flex items-center gap-1 sm:gap-2 transition-all duration-300 hover:scale-105 py-2 sm:py-0">
-                    <GraduationCap className="h-4 w-4 flex-shrink-0" />
-                    <span className="truncate">Student Enquiry</span>
+                  <TabsTrigger value="student" className="flex items-center gap-2 py-3">
+                    <GraduationCap className="h-5 w-5 flex-shrink-0" />
+                    <span>Student Enquiry</span>
                   </TabsTrigger>
                 </TabsList>
               </div>
