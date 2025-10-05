@@ -93,7 +93,14 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-6 pt-6 text-center">
           <p className="text-sm sm:text-base mb-3">
             <span className="text-primary-foreground/70">BUILT BY</span>{" "}
-            <span className="font-bold text-lg sm:text-xl text-accent">REVIEW AI TECH AND SOLUTIONS</span>
+            <a 
+              href="https://reviewrv25.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-bold text-lg sm:text-xl text-accent hover:text-accent/80 transition-colors cursor-pointer"
+            >
+              REVIEW AI TECH AND SOLUTIONS
+            </a>
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-1 text-xs sm:text-sm text-primary-foreground/70">
             <span className="hidden sm:inline">Need a website for yourself? Contact us now at</span>
