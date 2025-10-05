@@ -92,7 +92,14 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-6 pt-6 text-center">
           <p className="text-xs sm:text-sm text-primary-foreground/70 mb-2">
-            BUILT BY <span className="font-semibold text-primary-foreground">REVIEW AI TECH AND SOLUTIONS</span>
+            BUILT BY <a 
+              href="https://reviewrv25.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-semibold text-primary-foreground hover:text-accent transition-colors"
+            >
+              REVIEW AI TECH AND SOLUTIONS
+            </a>
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-1 text-xs text-primary-foreground/60">
             <span className="hidden sm:inline">Need a website for yourself? Contact us now at</span>
